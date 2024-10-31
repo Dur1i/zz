@@ -1,100 +1,180 @@
-<div id="list-home">
-    <div id="Noidung-home">
-        <div class="box-home">
-            <div class="img-home">
-                <img src="~/Content/HinhAnh/nha.jpg" style="width: 160px; height: 160px;" />
-            </div>
-            <div class="thongtinnha">
-                <h3 id="Quan1">Cho thuê ng.căn hẻm 3m Q1, 2pn,2wc; 10tr/t, 33m2, đg Nguyễn Cảnh Chân</h3>
-                <h4 style="color:red">25 triệu/Tháng</h4>
-                <h6>Liên hệ:+84 123456789</h6>
-            </div>
-        </div>
-        <div class="box-home">
-            <div class="img-home">
-                <img src="~/Content/HinhAnh/nha.jpg" style="width: 160px; height: 160px;" />
-            </div>
-            <div class="thongtinnha">
-                <h3 id="Quan1">Cho thuê ng.căn hẻm 3m Q1, 2pn,2wc; 10tr/t, 33m2, đg Nguyễn Cảnh Chân</h3>
-                <h4 style="color:red">25 triệu/Tháng</h4>
-                <h6>Liên hệ:+84 123456789</h6>
-            </div>
-        </div>
-        
-        <div class="box-home">
-            <div class="img-home">
-                <img src="~/Content/HinhAnh/nha.jpg" style="width: 160px; height: 160px;" />
-            </div>
-            <div class="thongtinnha">
-                <h3 id="Quan1">Cho thuê ng.căn hẻm 3m Q1, 2pn,2wc; 10tr/t, 33m2, đg Nguyễn Cảnh Chân</h3>
-                <h4 style="color:red">25 triệu/Tháng</h4>
-                <h6>Liên hệ:+84 123456789</h6>
-            </div>
-        </div>
-    </div>
-    <div id="quan">
-       
-        <div class="LocTheoQuan">
-            <h3>
-                <a href="#Quan1" class="Quan">Quận 1</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 2</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 3</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 4</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 5</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 6</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 7</a>
-            </h3>
-            <h3>
-                <a href="#Quan8" class="Quan">Quận 8</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 9</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 10</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 11</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận 12</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận Tân Bình</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận Tân Phú</a>
-            </h3>
-            <h3>
-                <a href="#QuanBT" class="Quan">Quận Bình Thạnh</a>
-            </h3>
-            <h3>
-                <a href="#QuanBtan" class="Quan">Quận Bình Tân</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Quận Phú Nhuận</a>
-            </h3>
 
-            <h3>
-                <a href="#" class="Quan">Quận Gò Vấp</a>
-            </h3>
-            <h3>
-                <a href="#" class="Quan">Thủ Đức</a>
-            </h3>
+@{
+    ViewBag.Title = "PhongTro";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
 
-        </div>
-    </div>
+<link href="~/Content/CSS/Style-PhongTro.css" rel="stylesheet" />
+
+
+<div id="NoiDung">
+    <ul class="DanhSachNha" style="list-style-type: none;height: 200px; width: 1000px">
+        <li class="Nha">
+            <a href="#">
+                <div id="ThongTinNha">
+                    <span>
+                        <img src="~/Content/HinhAnh/nha.jpg" style="width: 160px; height: 160px;" />
+                    </span>
+                    <div>
+                        <h3 id="Quan1">Cho thuê trọ hẻm 3m Q1, 2pn,2wc; 10tr/t, 33m2, đg Nguyễn Cảnh Chân</h3>
+                        <h4 style="color:red">3 triệu/Tháng</h4>
+                        <h6>Liên hệ:+84 123456789</h6>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <li class="Nha">
+            <a href="#">
+                <div id="ThongTinNha">
+                    <span>
+                        <img src="~/Content/HinhAnh/nha2.jpg" style="width: 160px; height: 160px;" />
+                    </span>
+                    <div>
+                        <h3 id="QuanBT">
+                            Nhà cho thuê trọ đường 69/ Nguyễn Gia Trí, p25, BT.
+                        </h3>
+                        <h4 style="color:red">2,5 triệu/Tháng</h4>
+                        <h6>Liên hệ:+84 123456789</h6>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="Nha">
+            <a href="#">
+                <div id="ThongTinNha">
+                    <span>
+
+                        <img src="~/Content/HinhAnh/nha3.jpg" style="width: 160px; height: 160px;" />
+                    </span>
+                    <div>
+                        <h3 id="Quan8">
+                            Cho thuê trọ HXT 69/3A Phạm Thế Hiểm Quận 8( đường D2 cũ)
+                        </h3>
+                        <h4 style="color:red">2 triệu/Tháng</h4>
+                        <h6>Liên hệ:+84 123456789</h6>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <li class="Nha">
+            <a href="#">
+                <div id="ThongTinNha">
+                    <span>
+
+                        <img src="~/Content/HinhAnh/nha4.jpg" style="width: 160px; height: 160px;" />
+                    </span>
+                    <div>
+                        <h3 id="QuanBT">
+                            Nhà cho thuê trọ đường 69/ Nguyễn Gia Trí, p25, BT.
+                        </h3>
+                        <h4 style="color:red">5 triệu/Tháng</h4>
+                        <h6>Liên hệ:+84 123456789</h6>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <li class="Nha">
+            <a href="#">
+                <div id="ThongTinNha">
+                    <span>
+
+                        <img src="~/Content/HinhAnh/nha5.png" style="width: 160px; height: 160px;" />
+                    </span>
+                    <div>
+                        <h3 id="Quan8">
+                            Nhà cho thuê trọ giá rẻ 12 Âu Dương Lân, p1,Quận 8
+                        </h3>
+                        <h4 style="color:red">3 triệu/Tháng</h4>
+                        <h6>Liên hệ:+84 123456789</h6>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <li class="Nha">
+            <a href="#">
+                <div id="ThongTinNha">
+                    <span>
+
+                        <img src="~/Content/HinhAnh/nha6.jpg" style="width: 160px; height: 160px;" />
+                    </span>
+                    <div>
+                        <h3 id="QuanBTan">
+                            Trọ gần Aeon Bình Tân, khu dân cư Tên Lửa
+                        </h3>
+                        <h4 style="color:red">3,5 triệu/Tháng</h4>
+                        <h6>Liên hệ:+84 123456789</h6>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
 </div>
+<div style="float: left; margin-top: 50px; ">
+    <h2>Các Quận</h2>
+    <div class="LocTheoQuan">
+        <h3>
+            <a href="#Quan1" class="Quan">Quận 1</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 2</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 3</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 4</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 5</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 6</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 7</a>
+        </h3>
+        <h3>
+            <a href="#Quan8" class="Quan">Quận 8</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 9</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 10</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 11</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận 12</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận Tân Bình</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận Tân Phú</a>
+        </h3>
+        <h3>
+            <a href="#QuanBT" class="Quan">Quận Bình Thạnh</a>
+        </h3>
+        <h3>
+            <a href="#QuanBtan" class="Quan">Quận Bình Tân</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Quận Phú Nhuận</a>
+        </h3>
 
+        <h3>
+            <a href="#" class="Quan">Quận Gò Vấp</a>
+        </h3>
+        <h3>
+            <a href="#" class="Quan">Thủ Đức</a>
+        </h3>
+
+    </div>
+
+</div>
