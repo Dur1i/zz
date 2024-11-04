@@ -1,0 +1,82 @@
+<style>
+    /* Căn giữa form trong trang */
+    
+
+    /* Tạo khung form */
+    .register-form {
+        width: 500px;
+        height: 500px;
+        margin: 50px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px;
+        border-radius: 8px;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+
+        /* Định dạng các phần tử trong form */
+        .register-form h2 {
+            margin: 0 0 20px;
+            text-align: center;
+            color: #333;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Định dạng nút đăng ký */
+    .btn-submit {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+      
+</style>
+
+<div class="register-form">
+    <h2>Đăng Ký</h2>
+    <form action="/submit_registration" method="POST">
+        <div class="form-group">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Xác nhận mật khẩu</label>
+            <input type="password" id="confirm-password" name="confirm_password" required>
+        </div>
+        <button type="submit" class="btn-submit">Đăng Ký</button>
+    </form>
+</div>
