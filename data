@@ -1,0 +1,55 @@
+create database Web
+use Web
+use master
+drop database Web
+-- Bảng AdminUser
+CREATE TABLE [dbo].[User] (
+    [UserName]     NVARCHAR (255) NOT NULL,
+    [RoleUser]     NVARCHAR (50) NOT NULL,
+    [Password] NCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([UserName] ASC)
+);
+
+--Bang Customer
+CREATE TABLE [dbo].[Customer] (
+    [IDCus]    INT  IDENTITY (1, 1) NOT NULL,
+    [NameCus]  NVARCHAR (50) NULL,
+    [PhoneCus] NVARCHAR (15)  NULL,
+    [EmailCus] NVARCHAR (50) NULL,
+    [UserName] NVARCHAR (255) NOT NULL,
+    PRIMARY KEY CLUSTERED ([IDCus] ASC),
+	CONSTRAINT [FK_User_Customer] FOREIGN KEY ([UserName]) REFERENCES [dbo].[User] ([UserName])
+);
+
+--Bang Category
+CREATE TABLE [dbo].[Category] (
+    [IDCate]   INT IDENTITY (1, 1) NOT NULL,
+    [Loai] NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Loai] ASC)
+);
+
+-- Bảng quận 
+CREATE TABLE [dbo].[Quan] (
+    [IDQuan] INT IDENTITY(1,1) NOT NULL,
+    [District] NVARCHAR(155) NOT NULL ,
+    PRIMARY KEY CLUSTERED ([District] ASC),
+);
+
+--Bang Products
+CREATE TABLE [dbo].[Product] (
+    [ProductID]     INT		   IDENTITY (1, 1) NOT NULL,
+    [NamePro]       NVARCHAR (50)  NULL,
+	[Adress]        NVARCHAR (255),
+    [DecriptionPro] NVARCHAR (255)  NULL,
+    [Loai]          NVARCHAR (50) NOT NULL,
+    [District]      NVARCHAR(155) NOT NULL ,
+    [Phone]         DECIMAL (18, 2),
+	[ImagePro]      NVARCHAR (MAX),
+    [Price]         NVARCHAR (max) NULL, 
+	PRIMARY KEY CLUSTERED ([ProductID] ASC),
+    CONSTRAINT [FK_Pro_Category] FOREIGN KEY ([Loai]) REFERENCES [dbo].[Category] ([Loai]),
+    CONSTRAINT [FK_Pro_Quan] FOREIGN KEY ([District]) REFERENCES [dbo].[Quan] ([District]),
+);
+
+
+
